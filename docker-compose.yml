@@ -39,6 +39,7 @@ services:
       WORDPRESS_TABLE_PREFIX: ${TABLE_PREFIX}
     volumes:
       - wordpress:/var/www/html
+      - ./server/dmz_wp_theme:/var/www/html/wp-content/themes/dmz_wp_theme
 
   phpmyadmin:
     image: phpmyadmin
